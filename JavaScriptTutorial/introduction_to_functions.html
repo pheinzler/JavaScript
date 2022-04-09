@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1 id="header">Hello World</h1>
+        <button onclick="red()">Red</button>
+        <button onclick="green()">Green</button>
+
+        <script>
+            function add(a,b){
+                return a+b;
+            }
+            var c = add(5,5);
+
+            function red(){
+                document.getElementById("header").innerHTML = "Red";
+                document.getElementById("header").style.color = "Red";
+            }
+            function green(){
+                document.getElementById("header").innerHTML = "Green";
+                document.getElementById("header").style.color = "Green";
+            }
+        </script>
+    </body>
+</html>

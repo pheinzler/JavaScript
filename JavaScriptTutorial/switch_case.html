@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <h1 id="header">Hello World</h1>
+        <h2 id="age">What is your age?</h2>
+        <input type="text" id="inp"/>
+        <input type="text" id="inpAge"/>
+        <button onclick="changeColor()">Click</button>
+
+        <script>
+            function changeColor(){
+                var text = document.getElementById("inp").value;
+                var age = parseInt(document.getElementById("inpAge").value);
+                if(age > 18){
+                    document.getElementById("age").style.color = "green";
+                }
+                else{
+                    document.getElementById("age").style.color = "red";
+                }
+
+                switch(text){
+                    case "red":
+                        document.getElementById("header").style.color = "red";
+                        break;
+                    case "blue":
+                        document.getElementById("header").style.color = "blue";
+                        break;
+                    case "green":
+                        document.getElementById("header").style.color = "green";
+                        break;
+                    default:
+                        document.getElementById("header").style.color = "grey";
+                        break;
+                }
+            }
+
+        </script>
+    </body>
+</html>

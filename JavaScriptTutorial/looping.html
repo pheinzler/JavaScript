@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <script>
+            //while loop
+            var i = 0;
+            var names = ["Patrick", "Julia", "Tim","Simon","Jule"];
+            while(i < names.length){
+                console.log(names[i])
+                ++i;
+            }
+            //do while
+            var cond = false;
+            do{
+                console.log("run!")
+            }while(cond);
+
+            //for loop
+            var arr = [];
+            for(var i = 0 ; i < 15; i++){
+                arr.push(i*i);
+                console.log(arr[i]);
+            }
+
+            //excerise
+            function findInArr(arr, ele){
+                for(var i = 0; i < arr.length ; ++i){
+                    if(arr[i] == ele){
+                        return true
+                    }
+                }
+                return false;
+            }
+
+            var exists = findInArr(arr, 36)
+            console.log(exists)
+            var exists = findInArr(arr, 42)
+            console.log(exists)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!--comment in html-->
+<html>
+    <body>
+        <h1 id="header">Type Something</h1>
+        <input type="text" id="input"/>
+        <button onclick="clicked()">Click</button>
+        <p id="output"></p>
+        <script>
+            //https://www.w3schools.com/jsref/jsref_obj_string.asp --> string methods
+            function clicked(){
+                var text = document.getElementById("input").value;
+                output.innerHTML = text.toUpperCase(); //toLowerCase
+
+                if(text.startsWith("h")){ //endWith()
+                    document.getElementById("header").style.color = "blue";
+                }
+
+                output.innerHTML = text.trim().toLowerCase(); //trim removes spaces in beginning and end
+                console.log(text.length);
+            }
+
+        </script>
+    </body>
+</html>
