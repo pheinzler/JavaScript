@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <h1>Mutability</h1>
+        <script>
+            var x = 5;
+            var y = x //--> changes in y won't affect x
+            var z = [];
+            var s = z; //changes here will change z
+
+            function add5(num){
+                num+=5;
+                console.log(num);
+            }
+
+            function appen5(arr){
+                arr.push(5);
+            }
+            //primitive datatypes: numbers, strings, bool , null , undefined 
+            var a = 5
+            add5(a);
+            console.log(a);
+
+            var arr = [1,2,3,4]
+            appen5(arr);
+            console.log(arr);
+
+            //falls arr nicht veränder werden soll,  kopie anlegen:
+            //Methode 1
+            var arr2 = arr.slice(0,arr.length)
+            console.log(arr2);
+            //Methode2
+            var arr3 = [...arr];
+            console.log(arr3);
+        </script>
+    </body>
+</html>
