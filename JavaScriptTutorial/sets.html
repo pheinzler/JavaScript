@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h1>Sets</h1>
+        <script>
+            var _set = new Set();
+            var _set2 = new Set([1,2,3,3,5,9,42,666,42,17])
+            var stringset = new Set("Hello");
+            _set.add(7).add(7).add(6).add(3).add(42);
+            console.log(_set)
+            console.log(_set.has(42));
+            console.log(_set.delete(3));
+            console.log(_set.delete(3));
+            console.log(_set.values());
+            
+            for(var entry of _set.values()){
+                console.log(entry);
+            }
+            console.log(_set2);
+            console.log(stringset);
+
+            function test(x){
+                console.log(x);
+            }
+            _set2.forEach(test)
+        </script>0
+    </body>
+</html>
